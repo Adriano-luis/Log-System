@@ -9,7 +9,7 @@ class History {
     private $pdo;
 
     public function __construct(){
-        $this->pdo = new PDO("mysql:dbname=logs;host=localhost", "Adriano", "Ad0023123@");
+        $this->pdo = new PDO("mysql:dbname=logs;host=localhost", "", "");
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     }
